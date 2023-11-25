@@ -1,0 +1,223 @@
+@charset "UTF8";
+/* RESET CSS */
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* CRIANDO VARIÁVEIS */
+:root{
+    --fonte-principal: 'Inter', sans-serif;
+    --cor-fundo: #00030C;
+    --cor-branco: #FFFFFF;
+    --cor-prata: #C0C0C0;
+    --cor-botao:#167BF7;
+    --cor-fantasma-branco:#F9F9F9;
+    --cor-hover-botao: #272727;
+}
+
+/* ESTILO BODY */
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor-branco);
+}
+
+/* INSERIDO IMAGEM NO FUNDO DA TELA */
+.principal{
+    background-image: url("img/Background.svg");
+    background-repeat: no-repeat; /*Não deixa repetir a imagem*/
+    background-size: contain; 
+    align-items: center;
+    text-align: center;
+    
+}
+
+.container{
+    height: 100vh;   /*Altura da imagem*/
+    display: grid;
+    grid-template-columns: 50% 50%
+     
+}
+
+.container__titulo{
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 33,89px;
+}    
+
+.container__imagem{
+    margin: 1.38rem 0 3.38rem 0;
+}    
+
+.container__botao{
+    background-color: var(--cor-botao) ;
+    color: var(--cor-branco);
+    border-radius: 8px;
+    padding: 1rem;
+    display: block;
+    line-height: 24px;
+    margin-bottom: 1rem;
+}
+
+.container__botao:hover{
+    background-color: var(--cor-hover-botao);
+}
+
+
+.batao-secundario{
+    background-color: transparent;
+    border: 1px solid var(--cor-branco);
+    margin-bottom: 0.63rem;
+}
+
+.container__texto{
+    font-size: 0.75rem;
+    line-height: 14,52px;
+}
+
+.container__elementos{
+    margin: 0 6rem;
+}
+
+/* FIM TELE INSTRUTORES  */
+
+/* ESTILO MONITOR E CELULAR */
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.descricao__texto{
+    line-height: 1.5rem;
+    color: var(--cor-fantasma-branco);
+}
+/* FIM ESTILO MONITOR E CELULAR */
+
+/* ESTILO TELAS */
+.terceario{
+    align-items: center;
+    margin: 0 10rem ;
+    gap: 70px;
+}
+
+.terceario__texto{
+    line-height: 24px;
+    caret-color: var(--cor-fantasma-branco);
+    margin-bottom: 2rem;
+}
+
+.botao__combo{
+    color: var(--cor-branco);
+    line-height: 24px;
+    background-color: var(--cor-botao);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.botao__combo:hover{
+    background-color: var(--cor-hover-botao);
+}
+
+/* ESTILO SECTION NOTEBOOK */
+.notebook{
+    align-items: center;
+    margin: 0 8.9rem 0 7.5rem;
+    gap: 44px;
+}
+
+.notebook__titulo{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.notebook__texto{
+    line-height: 1.5rem;
+    color: var(--cor-fantasma-branco);
+}
+/* FIM ESTILO SECTION NOTEBOOK */
+
+/* ESTILO DISPOSITIVOS */
+.dispositivos__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap:  60px;
+    
+}
+
+.dispositivos__titulo{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    text-align: center;
+    margin-top:  2.5rem ;
+}  
+
+.lista__item{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+/* FIM ESTILO DISPOSITIVOS */
+
+/* ESTILO RODAPÉ */
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 6.2rem;
+}
+
+.rodape__logo{
+    margin:  9.6rem 0 2.6rem 0;
+}  
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}  
+
+a{
+    color: var(--cor-branco);
+    line-height: 1.5rem;
+}
+
+.lista__link  a:hover {
+    color: var(--cor-botao);
+}
+
+.rodape__texto{
+    font-size: 0.88rem;
+    width: 88%;
+    margin: 0.5rem;
+}
+/* FIM ESTILO RODAPÉ */
+
+  
+
