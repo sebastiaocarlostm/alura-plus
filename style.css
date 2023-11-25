@@ -219,5 +219,25 @@ a{
 }
 /* FIM ESTILO RODAPÉ */
 
+/* ESTILO  RESPONSIVO */
+@media screen and (max-width: 768px){
+    .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        background-image: none;
+    }
+
+    .container__imagem{
+        width: 50vw;
+    }
+
+    .container__elementos{
+        margin: 2em 2em;
+    }
+
+}
+
   
 
