@@ -95,66 +95,34 @@ body{
 
 .secundario{
     align-items: center;
-    margin: 0 10rem;
+    margin: 0 10em;
 }
 
 .descricao__titulo{
     font-weight: 700;
-    font-size: 3rem;
-    line-height: 3.6rem;
-    margin-bottom: 0.5rem;
+    font-size: 3em;
+    margin-bottom: 0.1em;
 }
 
 .descricao__texto{
-    line-height: 1.5rem;
     color: var(--cor-fantasma-branco);
 }
 /* FIM ESTILO MONITOR E CELULAR */
 
 /* ESTILO TELAS */
-.terceario{
-    align-items: center;
-    margin: 0 10rem ;
-    gap: 70px;
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
 }
 
-.terceario__texto{
-    line-height: 24px;
-    caret-color: var(--cor-fantasma-branco);
-    margin-bottom: 2rem;
-}
-
-.botao__combo{
-    color: var(--cor-branco);
-    line-height: 24px;
-    background-color: var(--cor-botao);
-    padding: 16px;
-    border-radius: 8px;
-}
-
-.botao__combo:hover{
+.secundario__botao:hover{
     background-color: var(--cor-hover-botao);
 }
 
-/* ESTILO SECTION NOTEBOOK */
-.notebook{
-    align-items: center;
-    margin: 0 8.9rem 0 7.5rem;
-    gap: 44px;
+.container__descricao{
+    padding: 2em;
 }
-
-.notebook__titulo{
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 3.6rem;
-    margin-bottom: 0.5rem;
-}
-
-.notebook__texto{
-    line-height: 1.5rem;
-    color: var(--cor-fantasma-branco);
-}
-/* FIM ESTILO SECTION NOTEBOOK */
 
 /* ESTILO DISPOSITIVOS */
 .dispositivos__lista{
@@ -222,10 +190,7 @@ a{
 /* ESTILO  RESPONSIVO */
 @media screen and (max-width: 768px){
     .container{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
+        display: block;
         background-image: none;
     }
 
@@ -235,6 +200,28 @@ a{
 
     .container__elementos{
         margin: 2em 2em;
+    }
+
+    .secundario{
+        margin: 0;
+        text-align: center;
+    }
+
+    .secundario__imagem{
+        width: 50vw;
+    }
+    
+    .terceario{
+        text-align: center;
+        margin: 0;
+    }
+
+    .dispositivos__lista{
+        display: block;
+    }
+
+    .rodape__lista{
+        display: block;
     }
 
 }
